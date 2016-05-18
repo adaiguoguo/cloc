@@ -8,7 +8,7 @@ import time
 
 if __name__ == "__main__":
     clone.git_clone(config.CLOC_LABEL)
-    os.system("cloc {0} -json --out {1}".format(config.CODE_EXPORT,config.JSON_REPORT))
+    os.system("{0} {1} -json --out {2}".format(config.CLOC_RUN_PATH,config.CODE_EXPORT,config.JSON_REPORT))
     with open(config.JSON_REPORT) as data_file:
         data = json.load(data_file)
         u = Utils()
