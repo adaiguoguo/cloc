@@ -22,5 +22,4 @@ if __name__ == "__main__":
                 c.execute(sql)
         c.close()
         u.conn.commit()
-    os.remove(config.CODE_EXPORT)
 
