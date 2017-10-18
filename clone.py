@@ -4,7 +4,6 @@ import config
 import glob
 import shutil
 def git_clone(depository):
-    shutil.rmtree(config.CODE_EXPORT)
     os.mkdir(config.CODE_EXPORT)
     if depository == "Github":
         newestfolder = max(glob.iglob("%s*"%(config.CODE_PATH)), key=os.path.getctime)
