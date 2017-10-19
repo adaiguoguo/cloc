@@ -7,6 +7,8 @@ CREATE TABLE `code_cloc` (
   `createdtime` datetime NOT NULL,
   `lang` varchar(128) NOT NULL,
   `files` int(11) NOT NULL,
+  `blank` int(11) NOT NULL,
+  `comment` int(11) NOT NULL,
   `lines` int(11) NOT NULL,
   `label` varchar(128) NOT NULL,
   PRIMARY KEY (`id`)
